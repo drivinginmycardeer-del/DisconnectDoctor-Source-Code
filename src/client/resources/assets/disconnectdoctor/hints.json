@@ -1,0 +1,142 @@
+[
+  {
+    "id": "outdated_client",
+    "match": ["outdated client", "incompatible client", "please use 1.", "unsupported version", "multiplayer.disconnect.outdated_client"],
+    "title": "Your game version is different from the server's",
+    "explanation": "The server runs a different Minecraft version than you do.",
+    "fix": "Check the server's version (server list or website) and launch that exact version. Some servers also need a specific mod loader."
+  },
+  {
+    "id": "outdated_server",
+    "match": ["outdated server", "i'm still on", "multiplayer.disconnect.outdated_server"],
+    "title": "The server is older than your game",
+    "explanation": "You are on a newer Minecraft version than the server supports.",
+    "fix": "Launch the older version the server uses, or ask the owner when they plan to update."
+  },
+  {
+    "id": "whitelist",
+    "match": ["not whitelisted", "whitelist"],
+    "title": "You're not on the whitelist",
+    "explanation": "This server only lets approved players join.",
+    "fix": "Ask the server owner or staff to add your exact username. Make sure you are logged in with the right account."
+  },
+  {
+    "id": "banned",
+    "match": ["you are banned", "ip address is banned", "banned from this server", "you have been banned"],
+    "title": "You are banned from this server",
+    "explanation": "A staff member banned your account or your IP address.",
+    "fix": "Read the ban message for a reason or appeal link. If it is an IP ban, anyone sharing your network may be affected too."
+  },
+  {
+    "id": "server_full",
+    "match": ["server is full", "the server is full"],
+    "title": "The server is full",
+    "explanation": "All player slots are taken right now.",
+    "fix": "Try again in a few minutes. Some servers have a priority or rank slot for supporters."
+  },
+  {
+    "id": "invalid_session",
+    "match": ["invalid session", "failed to verify username", "not authenticated", "authentication servers", "multiplayer.disconnect.unverified_username", "multiplayer.disconnect.authservers_down"],
+    "title": "Minecraft couldn't verify your account",
+    "explanation": "Your login session expired, or Mojang/Microsoft's login servers are having trouble.",
+    "fix": "Fully close and reopen the launcher, then sign in again. If it keeps happening, check whether Minecraft's login services are down."
+  },
+  {
+    "id": "duplicate_login",
+    "match": ["logged in from another location", "already online", "already logged in"],
+    "title": "Your account is already connected",
+    "explanation": "The same account joined from another place, or your old connection hasn't timed out yet.",
+    "fix": "Close any other Minecraft window or device using this account, wait about 30 seconds, then rejoin."
+  },
+  {
+    "id": "resource_pack",
+    "match": ["resource pack", "texture pack", "multiplayer.requiredtexturepromp"],
+    "title": "The server requires its resource pack",
+    "explanation": "You declined or failed to download the pack this server requires.",
+    "fix": "In the server list, edit the server and set Server Resource Packs to Enabled (or Prompt and accept it). If the download fails, check your internet."
+  },
+  {
+    "id": "mod_mismatch",
+    "match": ["mod rejections", "mismatched mod", "missing mods", "incompatible fml", "mod channel", "registry", "modded server"],
+    "title": "Mods don't match the server",
+    "explanation": "The server and your game have different mods or mod versions, or one side is modded and the other isn't.",
+    "fix": "Install exactly the modpack/mod versions the server lists. If the server is vanilla or a plugin server, remove mods that change gameplay."
+  },
+  {
+    "id": "secure_profile",
+    "match": ["secure profile", "chat message validation", "missing_public_key", "invalid_public_key", "chat.disabled"],
+    "title": "Chat signing or profile problem",
+    "explanation": "The server requires a secure, verified chat profile, or your profile key is out of sync.",
+    "fix": "Restart the launcher and sign in again. Also check that your Microsoft account has multiplayer and chat enabled in its privacy settings."
+  },
+  {
+    "id": "flying",
+    "match": ["flying is not enabled", "kicked for floating", "kicked for flying"],
+    "title": "Kicked for looking like you were flying",
+    "explanation": "The server's anti-cheat thought you were flying, often caused by lag or a mod.",
+    "fix": "Disable mods that change movement and avoid long falls while lagging. Tell staff if you were not cheating."
+  },
+  {
+    "id": "spam",
+    "match": ["kicked for spamming", "disconnect.spam", "too fast"],
+    "title": "Kicked for spamming",
+    "explanation": "You sent chat messages or commands too quickly.",
+    "fix": "Wait a moment and rejoin, then slow down. Macros and keybinds that send commands can trigger this."
+  },
+  {
+    "id": "idle",
+    "match": ["idle for too long", "afk"],
+    "title": "Kicked for being idle",
+    "explanation": "You didn't move for longer than the server allows.",
+    "fix": "Rejoin. Standing still on an AFK-kick server will get you kicked again."
+  },
+  {
+    "id": "unknown_host",
+    "match": ["unknownhostexception", "unknown host", "no such host", "nodename nor servname"],
+    "title": "That server address doesn't exist",
+    "explanation": "Minecraft couldn't find a server at that address, or you have no internet.",
+    "fix": "Check the address for typos and extra spaces. Make sure you are online and try a different website to confirm."
+  },
+  {
+    "id": "refused",
+    "match": ["connection refused", "no further information"],
+    "title": "The server refused the connection",
+    "explanation": "Nothing is accepting connections at that address and port. The server is usually offline, restarting, or the port is wrong.",
+    "fix": "Wait a minute and try again. Double-check the address and port, and ask the owner if the server is online."
+  },
+  {
+    "id": "timeout",
+    "match": ["timed out", "timeout", "read timed out", "connect timed out"],
+    "title": "The connection timed out",
+    "explanation": "The server didn't answer in time. Common causes are a laggy connection, a very busy server, or a firewall blocking the connection.",
+    "fix": "Try again, switch from Wi-Fi to a wired or different network, and turn off VPNs. If you're hosting, check port forwarding and the firewall."
+  },
+  {
+    "id": "server_closed",
+    "match": ["server closed", "closed by the server", "server is stopping", "server is restarting"],
+    "title": "The server shut down or restarted",
+    "explanation": "The server was stopped, restarted, or crashed while you were connected.",
+    "fix": "Wait a few minutes and rejoin. Check the server's Discord or status page."
+  },
+  {
+    "id": "connection_reset",
+    "match": ["connection reset", "forcibly closed", "broken pipe", "an existing connection", "ioexception"],
+    "title": "The connection was cut off",
+    "explanation": "The connection dropped suddenly. This is usually your network, a server crash, or a firewall or antivirus closing the connection.",
+    "fix": "Rejoin and check your internet. If it happens repeatedly, try another network and pause VPNs or overly strict security software."
+  },
+  {
+    "id": "protocol_error",
+    "match": ["decoderexception", "encoderexception", "badly compressed", "packet too large", "protocol error", "invalid packet", "internal exception"],
+    "title": "Your game and the server couldn't understand each other",
+    "explanation": "A network packet was broken or unexpected. Common causes are a version mismatch, a mod interfering with networking, or a misconfigured proxy on the server.",
+    "fix": "Make sure your version matches the server's and try without mods. If it still happens on a vanilla client, tell the server owner."
+  },
+  {
+    "id": "connection_lost",
+    "match": ["connection lost"],
+    "title": "The connection to the server was lost",
+    "explanation": "Minecraft doesn't have a more specific reason for this one.",
+    "fix": "Rejoin, and check your internet. If the line above gives more detail, use that to search or to ask the server owner."
+  }
+]
